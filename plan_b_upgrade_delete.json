@@ -1,0 +1,56 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.7.0",
+  "resource_changes": [
+    {
+      "address": "azurerm_linux_virtual_machine.app",
+      "type": "azurerm_linux_virtual_machine",
+      "change": {
+        "actions": [
+          "update"
+        ],
+        "before": {
+          "name": "app-srv",
+          "size": "Standard_B1s",
+          "location": "eastus"
+        },
+        "after": {
+          "name": "app-srv",
+          "size": "Standard_B2s",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_managed_disk.data",
+      "type": "azurerm_managed_disk",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "app-data",
+          "location": "eastus",
+          "storage_account_type": "Premium_LRS",
+          "disk_size_gb": 128
+        }
+      }
+    },
+    {
+      "address": "azurerm_linux_virtual_machine.old",
+      "type": "azurerm_linux_virtual_machine",
+      "change": {
+        "actions": [
+          "delete"
+        ],
+        "before": {
+          "name": "old-srv",
+          "size": "Standard_B1s",
+          "location": "eastus"
+        },
+        "after": null
+      }
+    }
+  ]
+}

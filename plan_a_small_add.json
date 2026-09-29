@@ -1,0 +1,41 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.7.0",
+  "resource_changes": [
+    {
+      "address": "azurerm_linux_virtual_machine.web_server",
+      "type": "azurerm_linux_virtual_machine",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "web-prod-01",
+          "size": "Standard_B1s",
+          "location": "eastus",
+          "tags": {
+            "environment": "production",
+            "tier": "frontend"
+          }
+        }
+      }
+    },
+    {
+      "address": "azurerm_managed_disk.data_disk",
+      "type": "azurerm_managed_disk",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "data-disk-01",
+          "location": "eastus",
+          "storage_account_type": "Premium_LRS",
+          "disk_size_gb": 128
+        }
+      }
+    }
+  ]
+}

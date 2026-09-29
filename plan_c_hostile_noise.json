@@ -1,0 +1,216 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.7.0",
+  "resource_changes": [
+    {
+      "address": "azurerm_resource_group.rg_core",
+      "type": "azurerm_resource_group",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "rg_core",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_virtual_network.vnet_hub",
+      "type": "azurerm_virtual_network",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "vnet_hub",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_virtual_network.vnet_spoke",
+      "type": "azurerm_virtual_network",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "vnet_spoke",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_subnet.sub_app",
+      "type": "azurerm_subnet",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "sub_app",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_subnet.sub_web",
+      "type": "azurerm_subnet",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "sub_web",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_subnet.sub_db",
+      "type": "azurerm_subnet",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "sub_db",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_subnet.sub_gateway",
+      "type": "azurerm_subnet",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "sub_gateway",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_network_security_group.nsg_web",
+      "type": "azurerm_network_security_group",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nsg_web",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_network_security_group.nsg_app",
+      "type": "azurerm_network_security_group",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nsg_app",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_network_security_group.nsg_db",
+      "type": "azurerm_network_security_group",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nsg_db",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_network_security_rule.allow_http",
+      "type": "azurerm_network_security_rule",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "allow_http",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_network_security_rule.allow_https",
+      "type": "azurerm_network_security_rule",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "allow_https",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_network_security_rule.allow_ssh",
+      "type": "azurerm_network_security_rule",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "allow_ssh",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_route_table.rt_hub",
+      "type": "azurerm_route_table",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "rt_hub",
+          "location": "eastus"
+        }
+      }
+    },
+    {
+      "address": "azurerm_route.route_internet",
+      "type": "azurerm_route",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "route_internet",
+          "location": "eastus"
+        }
+      }
+    }
+  ]
+}
